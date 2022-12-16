@@ -1,7 +1,5 @@
 # React Cart Project Setup instructions
 
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -25,7 +23,7 @@ This project applied React technologies:
 --React frameworks\
 --React Componments\
 --React Hooks\
---LocalStorage\
+--LocalStorage
 
 ## Requirements check list
 1. Have a pre-populated (hard coded) array of objects as products.\

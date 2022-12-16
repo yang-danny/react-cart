@@ -112,7 +112,7 @@ text-align: center;
   font-weight: bold;
   color: grey;
 }
-.details button{
+.details button, .checkout button{
   width: 10rem;
   height: 2rem;
   margin-top: 5px;
@@ -206,6 +206,15 @@ article{
 .total span:nth-child(2){
   font-size: 1.2rem;
   color: green;
+}
+.checkout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.checkout button{
+  margin: 5px;
 }
 footer{
   margin-top: 2rem;

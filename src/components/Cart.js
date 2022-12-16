@@ -17,6 +17,17 @@ const handleRemove=(id)=>{
     const arr=cart.filter((item)=>item.id!==id)
     setCart(arr)
 }
+const handleReset=()=>{
+  cart=[]
+    setCart(cart)
+}
+const handleCheckout=()=>{
+    if(cart.length>0){
+alert("Thanks for your payment, your order is on the way!")
+    handleReset()}
+    else alert("Your cart is emety, please back to the home page to add products.")
+  }
+
 return(
     <article>
         {
@@ -42,6 +53,10 @@ return(
         <div className="total">
             <span>Total Price: </span>
             <span>${price}</span>
+        </div>
+        <div className="checkout">
+        <button onClick={()=>handleReset()}>Reset <i class="fa-solid fa-arrow-rotate-right"></i></button>
+        <button onClick={()=>handleCheckout()}>Checkout <i class="fa-regular fa-credit-card"></i></button>
         </div>
     </article>
 )
